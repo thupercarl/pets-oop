@@ -10,9 +10,6 @@ session_start();
 //require autoload file
 require_once('vendor/autoload.php');
 
-//require the file that defines the pet class
-require('classes/pet.php');
-
 //instantiate fat-free
 $f3 = Base::instance();
 
@@ -34,7 +31,7 @@ $f3->route('GET /', function(){
 
     $dog1 = new Dog("Riley", "brown");
 
-    var_dump($dog1);
+    //var_dump($dog1);
     $dog1->fetch();
     $dog1->eat();
 

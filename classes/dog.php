@@ -2,7 +2,7 @@
 
 class Dog extends Pet
 {
-    private $_breed;
+    //private $_breed;
 
     function fetch()
     {

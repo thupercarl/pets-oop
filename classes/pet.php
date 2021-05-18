@@ -20,8 +20,8 @@ class Pet
      */
     function __construct($name="unknown", $color="unknown")
     {
-        $this->name = $name;
-        $this->color = $color;
+        $this->_name = $name;
+        $this->_color = $color;
     }
 
     /**
@@ -68,7 +68,7 @@ class Pet
      */
     function eat()
     {
-        echo $this->name . " is eating<br>";
+        echo $this->_name . " is eating<br>";
     }
 
     /**
@@ -77,7 +77,7 @@ class Pet
      */
     function talk()
     {
-        echo $this->name . " is talking<br>";
+        echo $this->_name . " is talking<br>";
     }
 
     /**
@@ -86,6 +86,6 @@ class Pet
      */
     function sleep()
     {
-        echo $this->name . " is sleeping<br>";
+        echo $this->_name . " is sleeping<br>";
     }
 }
